@@ -49,7 +49,7 @@ export default function Projects() {
             <h3 className="text-2xl font-bold">{project.title}</h3>
             <p className="mt-4 text-[#C4703A]">{project.tech}</p>
             <p className="mt-6 text-[#6b573e]">{project.description}</p>
-            <button className="mt-8 bg-[#2c2416] text-white px-6 py-3 rounded-full">
+            <button className="mt-8 border-2 border-[#C4703A] bg-white text-[#C4703A] hover:bg-[#a0522d] hover:border-[#a0522d] hover:text-white transition px-6 py-3 rounded-full">
               View project
             </button>
           </div>
