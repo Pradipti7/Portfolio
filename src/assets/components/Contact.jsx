@@ -1,5 +1,3 @@
-import { FaPaperPlane } from "react-icons/fa";
-
 export default function Contact() {
   return (
     <section id="contact" className="max-w-5xl mx-auto py-24 px-6">
@@ -80,7 +78,6 @@ export default function Contact() {
           type="submit"
           className="flex-items-center justify-center gap-3 bg-[#C4703A] hover:bg-[#b35f2e] text-white px-8 py-4 rounded-full transition duration-300"
         >
-          <FaPaperPlane />
           Send Message
         </button>
       </form>
