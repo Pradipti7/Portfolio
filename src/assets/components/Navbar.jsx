@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { hiMenuAlt3, Hix } from "react-icons/hi";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 export default function Navbar() {
-  const { open, setOpen } = useState(false);
+  const [open, setOpen] = useState(false);
   const links = ["About", "Skills", "Projects", "Crochet", "Contact"];
   return (
     <nav className="sticky top-0 z-50 bg-[#F7F0E8]/90 backdrop-blur-md border-b border-[#E8DDD0]">
@@ -22,12 +22,12 @@ export default function Navbar() {
             ))}
           </ul>
           <button className="md:hidden" onClick={() => setOpen(!open)}>
-            {open ? <Hix size={28} /> : <HiMenuAlt3 size={28} />}
+            {open ? <HiX size={28} /> : <HiMenuAlt3 size={28} />}
           </button>
         </div>
       </div>
       {open && (
-        <div className="ms:hidden bg-[#F7F0E8] border-t border-[#E8DDD0]">
+        <div className="md:hidden bg-[#F7F0E8] border-t border-[#E8DDD0]">
           {links.map((item) => (
             <a
               key={item}

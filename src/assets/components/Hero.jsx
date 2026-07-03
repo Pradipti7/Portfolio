@@ -49,22 +49,64 @@ export default function Hero() {
         >
           <div className="flex justify-center">
             <div className="relative">
-              <div className="w-[320px] h-p[320px] md:w-[400px] md:h-[430px] rounded-full bg-[#E8DDD0] flex items-center justify-center shadow"></div>
-              <div className="text=center">
-                <div className="text-7xl">💻🧶</div>
-                <p className="mt-6 text-[#6b573e]">
-                  Web Developer & Crochet Enthusiast
-                </p>
+              {/* the blob */}
+              <div className="w-[320px] h-[320px] md:w-[400px] md:h-[430px] rounded-full bg-[#E8DDD0] flex items-center justify-center shadow">
+                <div className="text-center">
+                  <div className="text-7xl">💻🧶</div>
+                  <p className="mt-6 text-[#6b573e]">
+                    Web Developer & Crochet Enthusiast
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className=" absolute -top-6 -right-6 bg-[#8DB5A0] rounded-full px-5 py-3 shadow-lg">
-              React & Tailwind CSS
-            </div>
-            <div className="absolute bottom-4 -left-6 bg-[#C4703A] text-white rounded-full px-5 py-3 shadow-lg">
-              QA & Testing
-            </div>
-            <div className="absolute top-1/2 -left-10 bg-white rounded-full px-5 shadow-lg">
-              Analytics
+              <motion.div
+                className="absolute -top-6 left-1/2 -translate-x-1/2 bg-[#8DB5A0]/90 backdrop-blur-sm text-white rounded-full px-5 py-3 shadow-lg shadow-black/10 whitespace-nowrap"
+                animate={{ y: [0, -10, 0] }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
+                React & Tailwind CSS
+              </motion.div>
+
+              <motion.div
+                className="absolute top-1/2 -translate-y-1/2 -right-10 bg-[#a0522d]/90 backdrop-blur-sm text-white rounded-full px-5 py-3 shadow-lg shadow-black/10 whitespace-nowrap"
+                animate={{ y: [0, 10, 0] }}
+                transition={{
+                  duration: 4.2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 1.5,
+                }}
+              >
+                Crochet
+              </motion.div>
+              <motion.div
+                className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-[#C4703A]/90 backdrop-blur-sm text-white rounded-full px-5 py-3 shadow-lg shadow-black/10 whitespace-nowrap"
+                animate={{ y: [0, -8, 0] }}
+                transition={{
+                  duration: 3.8,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 1,
+                }}
+              >
+                QA & Testing
+              </motion.div>
+
+              <motion.div
+                className="absolute top-1/2 -translate-y-1/2 -left-10 bg-white/90 backdrop-blur-sm rounded-full px-5 py-3 shadow-lg shadow-black/10"
+                animate={{ y: [0, 10, 0] }}
+                transition={{
+                  duration: 3.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.5,
+                }}
+              >
+                Analytics
+              </motion.div>
             </div>
           </div>
         </motion.div>
