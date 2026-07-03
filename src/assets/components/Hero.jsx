@@ -27,8 +27,13 @@ export default function Hero() {
             development. Let's work together to bring your ideas to life!
           </p>
           <div className="flex flex-wrap gap-5 mt-10">
-            <button className="bg-[#C4703A] hover:bg-[#a0522d] text-white px-7 py-3 rounded-full transition">
-              View My Work
+            <button>
+              <a
+                href="#projects"
+                className="inline-block bg-[#C4703A] hover:bg-[#b55e2d] text-white px-7 py-3 rounded-full transition"
+              >
+                View My Work
+              </a>
             </button>
             <button className="border-2 border-[#C4703A] text-[#C4703A] hover:bg-[#a0522d] hover:border-[#a0522d] hover:text-white transition px-7 py-3 rounded-full">
               Contact Me
