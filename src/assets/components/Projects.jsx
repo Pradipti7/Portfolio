@@ -38,7 +38,7 @@ const projects = [
 ];
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 mx-w-7xl mx-auto px-6">
+    <section id="projects" className="py-24 max-w-7xl mx-auto px-6">
       <h2 className="text-5xl font-bold text-center">Projects</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
         {projects.map((project) => (
@@ -49,7 +49,7 @@ export default function Projects() {
             <h3 className="text-2xl font-bold">{project.title}</h3>
             <p className="mt-4 text-[#C4703A]">{project.tech}</p>
             <p className="mt-6 text-[#6b573e]">{project.description}</p>
-            <button className="mt-8 bg-[##2c2416] text-white px-6 py-3 rounded-full">
+            <button className="mt-8 bg-[#2c2416] text-white px-6 py-3 rounded-full">
               View project
             </button>
           </div>
