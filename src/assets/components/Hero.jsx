@@ -14,9 +14,9 @@ export default function Hero() {
           <p className="uppercase tracking-[4px] tdxt-[#8DB5A0] font-semibold mb-3">
             Hello, I am
           </p>
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             Pradipti
-            <span className="text-[#C4703A]">Pokharel</span>
+            <span className="text-[#C4703A]"> Pokharel</span>
           </h1>
           <p className="mt-8 text-lg leading-8 text[#6b573e] max-w-xl">
             I am a passionate web developer with a strong focus on creating
