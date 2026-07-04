@@ -4,13 +4,12 @@ export default function About() {
   return (
     <section id="about" className="max-w-7xl mx-auto px-6 py-24">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
-        {/* Image */}
+
         <div className="flex justify-center">
           <img src={Desk} alt="Working Space" className="w-[340px] h-[420px] object-cover rounded-3xl shadow-lg"
           />
         </div>
 
-        {/* About */}
 
         <div>
           <p className="uppercase tracking-widest text-[#8DB5A0] font-semibold">
@@ -27,8 +26,6 @@ export default function About() {
             enjoy building responsive web applications while applying
             creativity, precision, and problem-solving to every project.
           </p>
-
-          {/* Information Card */}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
             <div>
