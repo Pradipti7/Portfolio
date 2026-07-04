@@ -35,15 +35,26 @@ export default function Hero() {
                 View My Work
               </a>
             </button>
-            <button className="border-2 border-[#C4703A] text-[#C4703A] hover:bg-[#a0522d] hover:border-[#a0522d] hover:text-white transition px-7 py-3 rounded-full">
-              Contact Me
+            <button>
+              <a
+                href="#contact"
+                className="border-2 border-[#C4703A] text-[#C4703A] hover:bg-[#a0522d] hover:border-[#a0522d] hover:text-white transition px-7 py-3 rounded-full"
+              >
+                Contact Me
+              </a>
             </button>
           </div>
           <div className="flex-gap-6 mt-10">
-            <FaGithub
-              size={28}
-              className="cursor-pointer hover:text-[#C4703A] duration-300"
-            />
+            <a
+              href="https://github.com/Pradipti7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub
+                size={30}
+                className="cursor-pointer hover:text-[#C4703A] duration-300"
+              />
+            </a>
           </div>
         </motion.div>
         {/* right side */}
