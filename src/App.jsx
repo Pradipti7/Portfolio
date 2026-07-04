@@ -4,7 +4,7 @@ import About from "./assets/components/About";
 import Skills from "./assets/components/Skills";
 import Projects from "./assets/components/Projects";
 import Contact from "./assets/components/Contact";
-// import Crochet from "./assets/components/Crochet";
+import Crochet from "./assets/components/Crochet";
 import Footer from "./assets/components/Footer";
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Crochet />
       <Footer />
     </div>
   );
