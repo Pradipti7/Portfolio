@@ -1,4 +1,3 @@
-
 export default function Crochet() {
   return (
     <section id="crochet" className="py-24 bg-[#E8DDD0]">
@@ -18,4 +17,3 @@ export default function Crochet() {
     </section>
   );
 }
-
