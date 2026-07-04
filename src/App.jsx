@@ -5,7 +5,7 @@ import Skills from "./assets/components/Skills";
 import Projects from "./assets/components/Projects";
 import Contact from "./assets/components/Contact";
 // import Crochet from "./assets/components/Crochet";
-// import Footer from "./assets/components/Footer";
+import Footer from "./assets/components/Footer";
 
 function App() {
   return (
@@ -16,10 +16,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
-      {/* <Projects />
-      <Crochet />
-      <Contact />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
