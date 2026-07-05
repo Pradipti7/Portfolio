@@ -1,21 +1,26 @@
+import { link } from "framer-motion/client";
+
 const projects = [
   {
     title: "Portfolio Website",
     tech: "React + Tailwind CSS",
     description:
       "Resoponsive portfolio website built using React and Tailwind CSS.",
+    link: "https://github.com/Pradipti7/Portfolio",
   },
   {
     title: "Spam Detection",
     tech: "Python, NLP, Machine Learning",
     description:
       "Email and SMS spam detection system built using NLP and ML techniques. ",
+    link: "https://github.com/Pradipti7/Spam-Detection",
   },
   {
     title: "Recipie Sharing Website",
     tech: "PHP, MySQL",
     description:
       "A web application for sharing and discovering recipes, built using PHP and MySQL.",
+    link: "https://github.com/Pradipti7/recipe-sharing",
   },
   {
     title: "Data Analytics Dashboard",
@@ -28,12 +33,14 @@ const projects = [
     tech: "Python, NLP, Machine Learning",
     description:
       "A complete pipeline for sentiment analysis and classification on a text reviews dataset using NLP techniques and machine learning.",
+    link: "https://github.com/Pradipti7/Sentiment-Classification",
   },
   {
     title: "ShouPP",
     tech: "HTML, CSS, JavaScript",
     description:
       "A responsive e-commerce website built using HTML, CSS and JavaScript for buying and selling products.",
+    link: "https://github.com/Pradipti7/ShopuPP/tree/main",
   },
 ];
 export default function Projects() {
@@ -49,9 +56,14 @@ export default function Projects() {
             <h3 className="text-2xl font-bold">{project.title}</h3>
             <p className="mt-4 text-[#C4703A]">{project.tech}</p>
             <p className="mt-6 text-[#6b573e]">{project.description}</p>
-            <button className="mt-8 border-2 border-[#C4703A] bg-white text-[#C4703A] hover:bg-[#a0522d] hover:border-[#a0522d] hover:text-white transition px-6 py-3 rounded-full">
-              View project
-            </button>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-8 border-2 border-[#C4703A] bg-white text-[#C4703A] hover:bg-[#a0522d] hover:border-[#a0522d] hover:text-white transition px-6 py-3 rounded-full"
+            >
+              View Project
+            </a>
           </div>
         ))}
       </div>
