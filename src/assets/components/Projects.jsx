@@ -23,10 +23,11 @@ const projects = [
     link: "https://github.com/Pradipti7/recipe-sharing",
   },
   {
-    title: "Data Analytics Dashboard",
-    tech: "Python, Pandas, Matplotlib, Seaborn",
+    title: "School attendance system",
+    tech: "react, postgreSQL, golang",
     description:
-      "An interactive data analytics dashboard built using Python and data visualization libraries to analyze and visualize data.",
+      "An interactive website for taking students attendance and keeping their records.",
+    link: "https://github.com/Pradipti7/attendancee",
   },
   {
     title: "Sentiment Analysis",
